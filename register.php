@@ -1,17 +1,19 @@
 <?php 
-include "service/user.php";
+include "service/user.php"; 
 
 if (isset($_POST['register'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
     $sql = "INSERT INTO user (username, password) 
-            VALUES ('$username', '$password')";
+            VALUES ('$username', '$hashed_password')"; 
 
     if ($db->query($sql)) {
-        echo "Data Berhasil Masuk";
+        echo "Akun berhasil dibuat!";
     } else {
-        echo "Data Tidak Masuk";
+        echo "Gagal membuat akun!";
     }
 }
 ?>
@@ -34,3 +36,4 @@ if (isset($_POST['register'])) {
     </form>
 </body>
 </html>
+
