@@ -1,5 +1,9 @@
 <?php 
+<<<<<<< HEAD
 session_start();
+=======
+
+>>>>>>> 4d8f13bdd400ad969bd79d1fd627fa7167a35dcd
 include "service/user.php";
 
 if (isset($_POST['masuk'])){
@@ -13,7 +17,10 @@ if (isset($_POST['masuk'])){
         $data = $result->fetch_assoc();
 
         if (password_verify($password, $data['password'])) {
+<<<<<<< HEAD
             $_SESSION['username'] = $username;
+=======
+>>>>>>> 4d8f13bdd400ad969bd79d1fd627fa7167a35dcd
             header("Location: dashboard.php");
             exit;
         } else {
@@ -44,7 +51,13 @@ if (isset($_POST['masuk'])){
         <input type="password" name="password" placeholder="password" required> <br> <br>
         <button type ="submit" name="masuk">Masuk</button>
     </form>
+<<<<<<< HEAD
     </div>
 
 </body>
 </html>
+=======
+
+</body>
+</html>
+>>>>>>> 4d8f13bdd400ad969bd79d1fd627fa7167a35dcd
