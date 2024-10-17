@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Warna latar belakang */
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Menjaga formulir di tengah secara vertikal */
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.wrapper {
+    justify-content: center;
+}
+
+h2 {
+    color: #333; /* Warna judul */
+    margin-bottom: 20px;
+    text-align: center; /* Memusatkan teks judul */
+}
+
+form {
+    background-color: white; /* Latar belakang formulir */
+    padding: 20px;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    width: 300px; /* Lebar formulir */
+    text-align: center; /* Memusatkan teks dalam formulir */
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%; /* Lebar penuh */
+    padding: 10px;
+    margin: 10px 0; /* Jarak antar input */
+    border: 1px solid #ccc; /* Warna border */
+    border-radius: 5px; /* Sudut melengkung */
+    font-size: 16px; /* Ukuran font */
+}
+
+button {
+    background-color: #3498db; /* Warna tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px;
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut melengkung tombol */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+    width: 100%; /* Lebar penuh tombol */
+    font-size: 16px; /* Ukuran font tombol */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+button:hover {
+    background-color: #2980b9; /* Warna tombol saat hover */
+}
+
+.error-message {
+    color: red; /* Warna untuk pesan kesalahan */
+    font-size: 14px; /* Ukuran font pesan kesalahan */
+    margin-top: 10px; /* Jarak di atas pesan kesalahan */
+}
