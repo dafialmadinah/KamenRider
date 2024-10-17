@@ -1,9 +1,5 @@
 <?php 
-<<<<<<< HEAD
-include "service/user.php";  // Pastikan koneksi database ada di sini
-=======
 include "service/user.php"; 
->>>>>>> 4d8f13bdd400ad969bd79d1fd627fa7167a35dcd
 
 if (isset($_POST['register'])) {
     $username = $_POST['username'];
@@ -43,4 +39,3 @@ if (isset($_POST['register'])) {
     </div>
 </body>
 </html>
-
